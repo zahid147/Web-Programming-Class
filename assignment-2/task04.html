@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Positioning Layout Example</title>
+  <style>
+    .container {
+      width: 100%;
+      height: 900px;
+      background-color: #f4f4f4;
+      position: relative;
+    }
+
+    .fixed-div {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .sticky-div {
+      position: sticky;
+      top: 50px;
+      background-color: #90e0ef;
+      padding: 15px;
+      text-align: center;
+      margin: 20px 0;
+      border: 1px solid #0077b6;
+    }
+
+    .relative-div {
+      position: relative;
+      width: 250px;
+      height: 150px;
+      margin: 0 auto;
+      background-color: #caf0f8;
+      border: 2px solid #03045e;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="fixed-div">Fixed Div (bottom of page)</div>
+    <div class="sticky-div">Sticky Div (50px from top)</div>
+    <div class="relative-div">
+      <p>
+        This is the relative div. Its content is contained within its
+        boundary.
+      </p>
+      <p>Extra text that won’t overflow thanks to overflow: hidden.</p>
+    </div>
+  </div>
+</body>
+
+</html>

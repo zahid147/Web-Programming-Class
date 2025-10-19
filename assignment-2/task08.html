@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Grid Layout</title>
+  <style>
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 250px);
+      justify-content: center;
+      gap: 20px;
+      background-color: #d0ebff;
+      padding: 30px;
+      text-align: center;
+    }
+ 
+    .image-container img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+ 
+<body>
+  <div class="image-container">
+    <img src="./images/1.jpg" alt="Image 1" />
+    <img src="./images/2.jpg" alt="Image 2" />
+    <img src="./images/3.jpg" alt="Image 3" />
+    <img src="./images/4.jpg" alt="Image 4" />
+    <img src="./images/5.jpg" alt="Image 5" />
+    <img src="./images/6.jpg" alt="Image 6" />
+    <img src="./images/7.jpg" alt="Image 7" />
+  </div>
+</body>
+
+</html>
